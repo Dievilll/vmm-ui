@@ -1,0 +1,61 @@
+.car-details-layout {
+  min-height: 100vh;
+}
+
+.car-details-flex {
+  max-height: 97vh;
+  width: 100%;
+}
+
+.car-number-title {
+  text-align: center;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+.car-details-card {
+  overflow-y: auto;
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.car-details-card div {
+  width: 100%;
+}
+
+.detail-row{
+  border-radius: 4px;
+  align-items: center;
+  padding: 2px;
+}
+
+.label {
+  flex: 0 0 40%; /* Фиксированная ширина для меток */
+}
+
+.value {
+  text-align: right;
+}
+
+.delta-exceeded {
+  /*color: #ff4d4f !important;*/
+  background-color: var(--ant-red-5);
+}
+
+.car-details-card::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Стили для текста в карточке */
+.car-details-card .ant-typography {
+  font-size: 18px !important;
+}
+
+.car-details-card .ant-divider {
+  margin: 12px 0;
+}
+
+.ant-flex-gap-middle{
+  gap: 0px;
+}

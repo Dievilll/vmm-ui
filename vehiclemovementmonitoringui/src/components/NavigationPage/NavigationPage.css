@@ -1,0 +1,10 @@
+.navigate-layout {
+  min-height: 100vh !important;
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

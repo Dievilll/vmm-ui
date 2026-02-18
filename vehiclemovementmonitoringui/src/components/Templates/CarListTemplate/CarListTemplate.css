@@ -1,0 +1,35 @@
+.ant-input-search-btn {
+  height: 60px;
+}
+
+.car-list-container {
+  overflow-y: auto; /* Вертикальный скролл */
+  margin: 12px 0; /* Отступы сверху и снизу */
+  
+}
+
+.car-list {
+  display: flex;
+}
+
+.car-text {
+  color: white !important;
+  font-size: 22px !important;
+}
+
+.red-button {
+  flex-shrink: 0 !important; /* Предотвращаем сжатие элемента */
+}
+
+/* Скроллбар для списка автомобилей */
+.car-list-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ccc;
+}

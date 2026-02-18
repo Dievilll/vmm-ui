@@ -1,0 +1,80 @@
+/* ProductListPage.css */
+.navigate-layout {
+  min-height: 100vh;
+}
+
+.navigate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 8px;
+}
+
+.product-list-title {
+  text-align: center;
+  margin: 0 !important;
+  flex-shrink: 0;
+}
+
+.product-list-container {
+  overflow-y: auto;
+  margin: 12px 0;
+}
+
+.product {
+  justify-content: space-between !important;
+  color: var(--ant-color-text) !important;
+}
+
+.product-text {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  user-select: none;
+}
+
+/* Стили для чекбоксов */
+.product-item .ant-checkbox-wrapper {
+  font-size: 24px !important;
+}
+
+.list-item .ant-checkbox-inner {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 4px !important;
+}
+
+.product-item .ant-checkbox-inner::after {
+  width: 7px !important;
+  height: 14px !important;
+  left: 9px !important;
+}
+
+.ant-checkbox-checked span {
+  background-color: var(--ant-green-6) !important;
+}
+
+/* Скроллбар для списка продукции */
+.product-list-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.product-list-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.product-list-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.product-list-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.ant-checkbox .ant-checkbox-inner::after{
+  width: calc(var(--ant-control-interactive-size) / 14 * 9);
+  height: calc(var(--ant-control-interactive-size) / 14 * 14);
+}
